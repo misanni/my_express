@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat app</title>
+</head>
+<body>
+    <h1>Chat index page</h1>
+    <ul>
+        <% for(let i=0; i < allChats.length; i++) { %>
+            <li>
+                <a href="/chats/<%=i%>"><%=allChats[i].name %></a>
+            </li>
+            <% } %>
+    </ul>
+</body>
+</html>
